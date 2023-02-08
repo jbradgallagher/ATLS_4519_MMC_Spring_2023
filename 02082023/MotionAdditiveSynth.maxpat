@@ -40,6 +40,72 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1179.0, 194.0, 91.0, 20.0 ],
+					"text" : "base note freq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1109.5, 194.0, 59.0, 20.0 ],
+					"text" : "freq max"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1045.0, 194.0, 59.0, 20.0 ],
+					"text" : "freq min"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 611.0, 226.0, 91.0, 20.0 ],
+					"text" : "base note freq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 541.5, 226.0, 59.0, 20.0 ],
+					"text" : "freq max"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 477.0, 226.0, 59.0, 20.0 ],
+					"text" : "freq min"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-54",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1821,21 +1887,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "2dAvgVelocity.maxpat",
-				"bootpath" : "~/Desktop/bfaShow_07042020/bfaShow",
+				"bootpath" : "~/Desktop/ATLS_4519_MMC_Spring_2023/02082023",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AddSynthScaler.maxpat",
-				"bootpath" : "~/Desktop/bfaShow_07042020/bfaShow",
+				"bootpath" : "~/Desktop/ATLS_4519_MMC_Spring_2023/02082023",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BB_spatial_channel_to_DAC.maxpat",
-				"bootpath" : "~/Desktop/bfaShow_07042020/bfaShow",
+				"bootpath" : "~/Desktop/ATLS_4519_MMC_Spring_2023/02082023",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1846,7 +1912,7 @@
 			}
 , 			{
 				"name" : "SpatReverb.maxpat",
-				"bootpath" : "~/Desktop/bfaShow_07042020/bfaShow",
+				"bootpath" : "~/Desktop/ATLS_4519_MMC_Spring_2023/02082023",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
