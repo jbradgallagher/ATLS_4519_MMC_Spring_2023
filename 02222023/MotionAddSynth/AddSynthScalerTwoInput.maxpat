@@ -40,6 +40,39 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 29.0, 570.0, 56.0, 20.0 ],
+					"text" : "Gate #3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 438.0, 311.0, 65.0, 20.0 ],
+					"text" : "Gate #2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.0, 230.0, 65.0, 20.0 ],
+					"text" : "Gate #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-131",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -92,7 +125,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 961.0, 311.0, 150.0, 154.0 ],
+					"patching_rect" : [ 961.0, 311.0, 151.0, 154.0 ],
 					"text" : "The \"partialScaler\" abstraction provides to outputs to scale 5 of the partials based on distance data. The first outlet outputs a linearly scaled set of partials and the second outlet outputs partials by an increment. double click on the object for details"
 				}
 
@@ -150,7 +183,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 883.458069000000023, 82.0, 150.0, 114.0 ],
+					"patching_rect" : [ 883.458069000000023, 82.0, 153.0, 114.0 ],
 					"text" : "This code keeps a running average over a window of average velocities. zl.stream keeps the 7 most recent average velocity measurements, which are summed and averaged themselves"
 				}
 
@@ -174,7 +207,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 145.0, 135.0, 60.0 ],
+					"patching_rect" : [ 420.0, 145.0, 137.0, 60.0 ],
 					"text" : "Take the average of both velocities, pass the value to the velocity smoothing code"
 				}
 
@@ -198,7 +231,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.0, 230.0, 150.0, 127.0 ],
+					"patching_rect" : [ 100.0, 230.0, 153.0, 127.0 ],
 					"text" : "This gate determines whether we scale distance changes using \"frequency mode\" or \"scale mode\" The default is \"frequency mode\" and sending a message of 1 or 2 from the 3rd inlet toggles between the modes"
 				}
 
@@ -617,7 +650,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 624.0, 76.0, 181.5, 33.0 ],
+					"patching_rect" : [ 624.0, 76.0, 182.0, 33.0 ],
 					"text" : "velocity smoothing to scale tone duration with velocity"
 				}
 
@@ -1536,8 +1569,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 33.04545348799995, 1.0, 0, 1107.022742737997987, 0.491803, 0, 1453.999999999994543, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 22.727271999999999, 1.0, 0, 761.363647000000014, 0.491803, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-26",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -1550,8 +1582,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 793.090973859999508, 1.0, 0, 1354.863716597999428, 0.721311, 0, 1453.999999999994543, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 545.454590000000053, 1.0, 0, 931.818236999999954, 0.721311, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-27",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -1564,8 +1595,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 231.318186047999603, 1.0, 0, 776.568229667999617, 0.147541, 0, 1156.590973860000076, 0.868852, 0, 1453.999999999994543, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 159.090912000000003, 1.0, 0, 534.090942000000041, 0.147541, 0, 795.454590000000053, 0.868852, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-28",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -1578,8 +1608,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 66.090912792000012, 0.885246, 0, 726.999999999997272, 0.786885, 0, 1024.409026139999469, 0.360656, 0, 1453.999999999994543, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 45.454548000000003, 0.885246, 0, 500.0, 0.786885, 0, 704.545409999999947, 0.360656, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-29",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -1592,8 +1621,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 809.613627903998804, 1.0, 0, 1189.636372095999832, 0.114754, 0, 1453.999999999994543, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 556.818175999999994, 1.0, 0, 818.181824000000006, 0.114754, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-30",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -1606,8 +1634,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 66.090912792000012, 1.0, 0, 280.886372095999889, 0.196721, 0, 1338.340973859999622, 0.704918, 0, 1470.522742737998897, 0.0, 0 ],
-					"domain" : 1454.0,
+					"addpoints" : [ 0.0, 0.0, 0, 45.454548000000003, 1.0, 0, 193.181824000000006, 0.196721, 0, 920.454590000000053, 0.704918, 0, 1011.363647000000014, 0.0, 0 ],
 					"id" : "obj-31",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -2028,7 +2055,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.625, 224.0, 253.375, 137.0 ],
+					"patching_rect" : [ 11.625, 220.0, 253.375, 137.0 ],
 					"proportion" : 0.5
 				}
 

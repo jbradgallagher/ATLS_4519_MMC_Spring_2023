@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 616.0, 375.0, 150.0, 33.0 ],
+					"text" : "receives z coordinate data from rump_1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1195.0, 167.5, 316.5, 114.0 ],
+					"text" : "In max you can also use send (\"s\") and receive (\"r\") objects to have a coordless way to send data around. We can receive all of the x y z coordinates from 6DOF objects anywhere in the patch by using the receive object and variable name: [r x3] for instance would receive the x coordinate of rump_3. Note how it used below to to get the z coordinate data from rump_1 to modulate a delay knob in the SpatReverb abstraction."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-147",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -69,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1443.0, 375.0, 150.0, 181.0 ],
+					"patching_rect" : [ 1443.0, 375.0, 153.0, 181.0 ],
 					"text" : "While this patch uses four trackers (rump_1 through rump_4) we only create two unique sounds based on the distance between rump_1 and rump_2 as a pair and rump_3 and rump_4 as a pair. We want to have ambisonic sound sources for every unique \"voice\" that we have in the patch, which in this case is two."
 				}
 
@@ -81,7 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1095.5, 375.0, 333.0, 275.0 ],
+					"patching_rect" : [ 1095.5, 375.0, 334.0, 275.0 ],
 					"text" : "BB_spatial_channel_to_DAC (below)\nThis \"bpatcher\" encodes an ambisonic signal and sends it to the mc.receive~ (multi-channel audio signal receive) which sends the audio out to a 16-channel dac~ which will correspond to our Dante Virtual Sound Card device which has its 16 transmitting outputs being sent to the BB_spatial_MacMini computer upstairs that decodes the 16-channel 3rd order ambisonic signal and send it to the speakers. The bpatcher gives you the ability to place the sound on the hemisphere dome. Theere are 3 rotational parameters: \nL-R Width is the angle between the stereo (left/right) channels and has a range of 0 to 360 degrees\nL-R Height (corresponds to an elevation rotation) has a range between 0 and 180, with 0 being the bottom on a side, 90 the top center, 180 the bottom at the opposite side\nHorizontal Rotate (corresponds to azimuth rotation) is rotation around Z (up and down) and ranges from -180 to 180. Each parameter can be automated by inputing data into inlets 3 (L-R Width) 4 (L-R Height) and 5 (Horizontal Rotate)"
 				}
 
@@ -482,7 +506,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 597.666684031486511, 447.5, 150.0, 47.0 ],
+					"patching_rect" : [ 597.666684031486511, 447.5, 153.0, 47.0 ],
 					"text" : "use z dimension data from first tracker to tweak delay knob on the reverb"
 				}
 
@@ -540,7 +564,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 788.75, 271.5, 120.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "1 = frequency mode\n2 = scale mode"
 				}
 
@@ -553,7 +576,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 915.5, 244.5, 120.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "1 = major scale\n2 = minor\n3 = major pentatonic\n4 = minor pentatonic"
 				}
 
@@ -566,7 +588,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1044.25, 266.0, 123.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "min/max frequencies for frequency mode"
 				}
 
@@ -590,7 +611,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 651.666684031486511, 14.5, 150.0, 33.0 ],
+					"patching_rect" : [ 651.666684031486511, 14.5, 153.0, 33.0 ],
 					"text" : "Receive 6DOF object data over OSC from QTM"
 				}
 
@@ -930,7 +951,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1388.5, 162.66666042804718, 150.0, 20.0 ],
+					"patching_rect" : [ 1416.5, 127.66666042804718, 150.0, 20.0 ],
 					"text" : "frequency of new note"
 				}
 
@@ -954,7 +975,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1368.5, 25.0, 150.0, 60.0 ],
+					"patching_rect" : [ 1368.5, 25.0, 153.0, 60.0 ],
 					"text" : "note number in scale, absoulte half-steps (note 0 is the base note, note 12 is an octave higher)"
 				}
 
@@ -1158,7 +1179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1331.5, 162.66666042804718, 50.0, 22.0 ]
+					"patching_rect" : [ 1354.5, 127.66666042804718, 50.0, 22.0 ]
 				}
 
 			}
@@ -2789,28 +2810,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "2dAvgVelocity.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "3dDistanceTrackers.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AddSynthScalerTwoInput.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BB_spatial_channel_to_DAC.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2821,7 +2842,7 @@
 			}
 , 			{
 				"name" : "SpatReverb.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2837,13 +2858,13 @@
 , 			{
 				"name" : "ircam-cnrs-spat-alpha.png",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/media/images",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/media/images",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/media/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "partialScaler.maxpat",
-				"bootpath" : "~/Downloads/02082023",
+				"bootpath" : "~/ATLS_4519_MMC_Spring_2023/02222023/MotionAddSynth",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2861,7 +2882,7 @@
 , 			{
 				"name" : "spat5.copyright.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2876,21 +2897,21 @@
 , 			{
 				"name" : "spat5.dsp.control.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.dsp.management.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.dsp.mute.bypass.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2905,21 +2926,21 @@
 , 			{
 				"name" : "spat5.input~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.loop.png",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/media/images",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/media/images",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/media/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.monitor.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
